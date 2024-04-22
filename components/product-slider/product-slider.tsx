@@ -66,11 +66,7 @@ export default function ProductSlider({
 
   return (
     <>
-      <div
-        className={cn('mx-auto space-y-5 p-2 sm:mx-0 sm:space-y-3', {
-          'sm:flex sm:flex-row-reverse sm:space-x-3 sm:space-y-0': vertical,
-        })}
-      >
+      <div className={cn('mx-auto space-y-5 p-2 sm:mx-0 sm:space-y-3')}>
         {/* MAIN SLIDER AND HOVER BUTTONS */}
         <div className='group relative w-96 rounded-md border shadow-sm'>
           <div

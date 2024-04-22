@@ -48,7 +48,6 @@ const HomePage = () => {
   return (
     <div className='mx-auto mt-12 flex max-w-6xl p-4'>
       <ProductSlider slides={slides} direction='rtl' />
-      {/* <VerticalThumb vertical slides={slides} direction='rtl' /> */}
     </div>
   );
 };
