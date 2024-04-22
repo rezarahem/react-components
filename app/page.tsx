@@ -1,4 +1,5 @@
-import EmblaCarousel from './embla-carousel';
+import VerticalThumb from '@/components/product-slider/vertical-thumb';
+import ProductSlider from '../components/product-slider/product-slider';
 
 const slides: {
   src: string;
@@ -24,6 +25,19 @@ const slides: {
     alt: 'slide 2',
     src: 'https://rahem.storage.iran.liara.space/free-images.jpg',
   },
+
+  {
+    alt: 'slide 2',
+    src: 'https://rahem.storage.iran.liara.space/free-images.jpg',
+  },
+  {
+    alt: 'slide 2',
+    src: 'https://rahem.storage.iran.liara.space/free-images.jpg',
+  },
+  {
+    alt: 'slide 2',
+    src: 'https://rahem.storage.iran.liara.space/free-images.jpg',
+  },
   {
     alt: 'slide 2',
     src: 'https://rahem.storage.iran.liara.space/free-images.jpg',
@@ -32,8 +46,9 @@ const slides: {
 
 const HomePage = () => {
   return (
-    <div className='mx-auto mt-12 max-w-lg border flex items-center justify-center border-blue-400 rounded-md p-4'>
-      <EmblaCarousel slides={slides} />
+    <div className='mx-auto mt-12 flex max-w-6xl p-4'>
+      <ProductSlider slides={slides} direction='rtl' />
+      {/* <VerticalThumb vertical slides={slides} direction='rtl' /> */}
     </div>
   );
 };
