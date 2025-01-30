@@ -1,21 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
+@layer base {
+ :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1e2a47;
+  --card: #ffffff;
+  --card-foreground: #1e2a47;
+  --popover: #ffffff;
+  --popover-foreground: #1e2a47;
+  --primary: #1e2a47;
+  --primary-foreground: #f2f2f2;
+  --secondary: #e4e7f2;
+  --secondary-foreground: #1e2a47;
+  --muted: #e4e7f2;
+  --muted-foreground: #5f6a83;
+  --accent: #e4e7f2;
+  --accent-foreground: #1e2a47;
+  --destructive: #f05c48;
+  --destructive-foreground: #f2f2f2;
+  --border: #a3afc7;
+  --input: #a3afc7;
+  --ring: #1e2a47;
+  --radius: 0.5rem;
+  --chart-1: #f25f37;
+  --chart-2: #1bae63;
+  --chart-3: #2d577f;
+  --chart-4: #a8d03b;
+  --chart-5: #e7b14f;
+ }
+
+ .dark {
+  --background: #1e2a47;
+  --foreground: #f2f2f2;
+  --card: #1e2a47;
+  --card-foreground: #f2f2f2;
+  --popover: #1e2a47;
+  --popover-foreground: #f2f2f2;
+  --primary: #f2f2f2;
+  --primary-foreground: #1e2a47;
+  --secondary: #3d4f6e;
+  --secondary-foreground: #f2f2f2;
+  --muted: #3d4f6e;
+  --muted-foreground: #7f8a9d;
+  --accent: #3d4f6e;
+  --accent-foreground: #f2f2f2;
+  --destructive: #f07a4d;
+  --destructive-foreground: #f2f2f2;
+  --border: #3d4f6e;
+  --input: #3d4f6e;
+  --ring: #c0d1ea;
+  --chart-1: #5c92e2;
+  --chart-2: #4d924a;
+  --chart-3: #e57b3f;
+  --chart-4: #9e4abf;
+  --chart-5: #9b5bb6;
+ }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+ --color-primary: var(--primary);
+ --color-primary-foreground: var(--primary-foreground);
+ --color-secondary: var(--secondary);
+ --color-secondary-foreground: var(--secondary-foreground);
+ --color-muted: var(--muted);
+ --color-muted-foreground: var(--muted-foreground);
+ --color-accent: var(--accent);
+ --color-accent-foreground: var(--accent-foreground);
+ --color-destructive: var(--destructive);
+ --color-destructive-foreground: var(--destructive-foreground);
+ --color-border: var(--border);
+ --color-input: var(--input);
+ --color-ring: var(--ring);
+ --color-chart-1: var(--chart-1);
+ --color-chart-2: var(--chart-2);
+ --color-chart-3: var(--chart-3);
+ --color-chart-4: var(--chart-4);
+ --color-chart-5: var(--chart-5);
 }
